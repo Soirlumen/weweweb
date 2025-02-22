@@ -1,8 +1,8 @@
 ﻿const footerElemTemplate = document.createElement('template');
 
 footerElemTemplate.innerHTML = `
-<div class="footer navtext">
-	<div class="quoteDisplayBox">Loading...</div>
+<div class="footer navtext"><span>2025 AIPV niggas |
+	<span class="quoteDisplayBox">Loading...</span></span>
 </div>
 `;
 
