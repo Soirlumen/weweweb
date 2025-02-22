@@ -64,12 +64,12 @@ class NavigationBar extends HTMLElement {
 
         const styleMainLink = document.createElement('link');
 		styleMainLink.rel = 'stylesheet';
-		styleMainLink.href = 'css/styles.css';
+		styleMainLink.href = '../css/styles.css';
 		shadowRoot.appendChild(styleMainLink)
 
         const styleOtherLink = document.createElement('link');
 		styleOtherLink.rel = 'stylesheet';
-		styleOtherLink.href = 'css/ostatni.css';
+		styleOtherLink.href = '../css/ostatni.css';
 		shadowRoot.appendChild(styleOtherLink)
 
 	}

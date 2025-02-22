@@ -17,12 +17,12 @@ class FooterElem extends HTMLElement {
 
 		const styleMainLink = document.createElement('link');
 		styleMainLink.rel = 'stylesheet';
-		styleMainLink.href = 'css/styles.css';
+		styleMainLink.href = '../css/styles.css';
 		shadow.appendChild(styleMainLink)
 
 		const styleOtherLink = document.createElement('link');
 		styleOtherLink.rel = 'stylesheet';
-		styleOtherLink.href = 'css/ostatni.css';
+		styleOtherLink.href = '../css/ostatni.css';
 		shadow.appendChild(styleOtherLink);
 	}
 
@@ -34,8 +34,6 @@ class FooterElem extends HTMLElement {
 			"„Svět je nebezpečné místo k životu, ne kvůli lidem, kteří jsou zlí, ale kvůli lidem, kteří s tím nic neudělají.“ — Albert Einstein",
 			"„První láska je jako los, který obvykle nevyhrává, ale jeho číslo si pamatujeme celý život.“ — Émile Zola",
 			"„Pokud se lidé dokážou mít alespoň trochu rádi, mohou být šťastní.“ — Émile Zola",
-			"„Sex bez lásky je prázdný zážitek. Ale ze všech prázdných zážitků je to jeden z nejlepších.“ — Woody Allen",
-			"„Sex uvolňuje napětí. Láska ho způsobuje.“ — Woody Allen",
 			"„Přemýšlíme příliš a cítíme málo.“ — Charlie Chaplin",
 			"„Tvé nahé tělo by mělo patřit jedině těm, kteří se zamilují do tvé nahé duše.“ — Charlie Chaplin",
 			"„Člověk raději poznává vesmír než sebe sama.“ — Ernest Hemingway",
