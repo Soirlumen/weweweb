@@ -156,7 +156,7 @@
         }
         .menu {
             width: 100%;
-            
+            transition-duration: 0.4s;
             flex-direction: column;
             justify-items: center;
             align-items:flex-end;
@@ -208,6 +208,8 @@
         .menu .navtext {
            display: none;
         }
-       
+        #menu-bar:hover{
+ background-color: var(--kontrast1);
+        }
         
     }

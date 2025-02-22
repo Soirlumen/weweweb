@@ -11,6 +11,7 @@
 
 a:active {
     color: var(--navbutton);
+    
 }
 
 .page {
@@ -32,6 +33,12 @@ td {
     padding: 5px 10px;
 
 }
+img{
+    height: 40vh;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0px 5px var(--idk);
+}
 
 tr:nth-child(even) {
     background-color: var(--subnav);
@@ -42,14 +49,13 @@ td {
     font-size: 19px;
 }
 
-td:first-child {
-    white-space: nowrap;
-}
 
 td:hover {
     background-color: #f3f7ff;
 }
-
+.year{
+    white-space: nowrap;
+}
 .year:hover {
     background-color: initial;
 }
@@ -206,7 +212,7 @@ button:hover {
     object-fit: cover;
     margin: 0 auto;
     border-radius: 20px;
-    border: 20px solid var(--menu);
+    
 }
 
 .item2 {
@@ -229,7 +235,7 @@ button:hover {
 
 .item2>ul {
     margin: 0;
-    padding: 0 30px 20px 30px;
+    padding: 10px 30px 10px 30px;
     
 }
 
