@@ -7,7 +7,7 @@ const basePath = actScriptPath.substring(0, actScriptPath.lastIndexOf('/'));
 const navbarTemplate = document.createElement('template');
 navbarTemplate.innerHTML = `
 
- <div class="menu">
+ <div class="menu" style="box-shadow: 0px 2px 4px var(--idk)">
     <a href="https://fjfi.cvut.cz/cz/" class="logo"></a>
     <div class="navtext">Stránky Ing. P. Eichlera, PhD</div>
     <input type="checkbox" id="menu-bar">
