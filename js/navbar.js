@@ -32,7 +32,7 @@ navbarTemplate.innerHTML = `
                     <span class="small_separator"></span>
                     <li><a href="rozvrh.html">Rozvrh</a></li>
                     <span class="small_separator"></span>
-                    <li><a href="temata.html">Témata prací</a></li>
+                    <li><a href="temata.html">Nabídka témat</a></li>
                 </ul>
             </li>
             <li>
