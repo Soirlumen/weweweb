@@ -6,12 +6,10 @@
     overflow: auto;
     text-align: justify;
     font-size: 1.1em;
-
 }
 
 a:active {
     color: var(--navbutton);
-    
 }
 
 .page {
@@ -22,23 +20,17 @@ table {
     margin: 0 auto;
     overflow-y: auto;
     text-align: justify;
-    border-collapse: collapse;
     width: 100%;
-
+    border-collapse: collapse; /* bunky nebudou vypadaz zdvojene*/
 }
 
 th,
 td {
     border: 1px solid var(--nav);
     padding: 5px 10px;
+    border-collapse: collapse; /*bunky se budou zalamovat dle stránky a nebudou presahovat dohaje*/
+}
 
-}
-img{
-    height: 40vh;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 0px 5px var(--idk);
-}
 
 tr:nth-child(even) {
     background-color: var(--subnav);
@@ -46,18 +38,18 @@ tr:nth-child(even) {
 
 td {
     vertical-align: top;
-    font-size: 19px;
+    font-size: 1.1em;
 }
-
 
 td:hover {
     background-color: #f3f7ff;
 }
 .year{
     white-space: nowrap;
+    background-color: var(--kontrast1);
 }
 .year:hover {
-    background-color: initial;
+    background-color: var(--kontrast1);
 }
 
 td a {
@@ -84,7 +76,7 @@ button:hover {
 
 .page>h1 {
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin-bottom: 1%;
 }
 
 
@@ -122,8 +114,8 @@ button:hover {
 .item {
     background-color: var(--subnav);
     width: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
@@ -131,7 +123,7 @@ button:hover {
 
 .item>h3 {
     background-color: var(--idk);
-    padding: 5px 10px;
+    padding: 1% 2%;
     color: var(--subnav);
     font-size: 1.3rem;
     border-top-left-radius: 10px;
@@ -161,7 +153,7 @@ button:hover {
     gap: 10px;
 }
 
-/*styly pro navigacni strukturu*/
+/*styly pro navigacni strukturu, ktera ale neni aplikovana protoze neni na strance slozita struktura*/
 .tree {
     width: 100%;
     background-color: var(--subnav);
@@ -177,7 +169,7 @@ button:hover {
     pointer-events: none;
 }
 
-/*medailonek*/
+/*medailonek pouzivany pouze na strance medailonka*/
 .medailonek {
     display: flex;
     flex-direction: row-reverse;
@@ -194,32 +186,19 @@ button:hover {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    gap:10px;
+    justify-content: space-between;
 }
-.vpravo {
-    width: 100%;
-   display: flex;
-   gap:10px;
-   justify-content: space-between;
-}
-.vlevo{
-    background-color: var(--bg);
-    border-radius: 20px;
-    padding: 10px 0;
-}
-.vlevo img {
-    height: auto;
-    max-width: 80%;
-    object-fit: cover;
-    margin: 0 auto;
-    border-radius: 20px;
-    
-}
+
 
 .item2 {
     width: 100%;
+    height: 100%;
     border-radius: 20px;
     box-sizing:border-box;
     background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
 }
 
 .item2>h3 {
@@ -238,7 +217,18 @@ button:hover {
     padding: 10px 30px 10px 30px;
     
 }
-
+.item2>p{
+    margin: 5%;
+    padding: 0;
+}
+.item2>img{
+    object-fit: contain;
+    max-height: 32vh;
+    width: auto;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    
+}
 
 @media screen and (max-width: 925px) {
     .medailonek {
@@ -248,11 +238,9 @@ button:hover {
         align-items: center;
 
     }
-
     .vlevo img {
        height: 50vh;
        width: auto;
-        object-fit: contain;
+       
     }
-
 }
