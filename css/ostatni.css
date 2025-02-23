@@ -26,7 +26,7 @@ table {
 
 th,
 td {
-    border: 1px solid var(--nav);
+    border: 1px solid var(--nav2);
     padding: 5px 10px;
     border-collapse: collapse; /*bunky se budou zalamovat dle stránky a nebudou presahovat dohaje*/
 }
