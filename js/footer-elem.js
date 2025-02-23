@@ -1,11 +1,12 @@
-﻿const footerElemTemplate = document.createElement('template');
+﻿
+
+const footerElemTemplate = document.createElement('template');
 
 footerElemTemplate.innerHTML = `
 <div class="footer navtext" style="box-shadow: 0px 2px 4px var(--idk)"><span>2025 AIPV niggas |
 	<span class="quoteDisplayBox">Loading...</span></span>
 </div>
 `;
-
 
 class FooterElem extends HTMLElement {
 
@@ -17,12 +18,12 @@ class FooterElem extends HTMLElement {
 
 		const styleMainLink = document.createElement('link');
 		styleMainLink.rel = 'stylesheet';
-		styleMainLink.href = '../css/styles.css';
+		styleMainLink.href = './css/styles.css';
 		shadow.appendChild(styleMainLink)
 
 		const styleOtherLink = document.createElement('link');
 		styleOtherLink.rel = 'stylesheet';
-		styleOtherLink.href = '../css/ostatni.css';
+		styleOtherLink.href = './css/ostatni.css';
 		shadow.appendChild(styleOtherLink);
 	}
 

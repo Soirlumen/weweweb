@@ -4,6 +4,9 @@ const actScriptPath = new URL(document.currentScript.src).pathname;
 // Get only directory path from full path of current script
 const basePath = actScriptPath.substring(0, actScriptPath.lastIndexOf('/'));
 
+console.log(actScriptPath)
+console.log(basePath)
+
 const navbarTemplate = document.createElement('template');
 navbarTemplate.innerHTML = `
 
@@ -55,22 +58,24 @@ navbarTemplate.innerHTML = `
 class NavigationBar extends HTMLElement {
 	constructor(){
 		super();
+
+        const shadow = this.attachShadow({mode: 'open'});
+		shadow.appendChild(navbarTemplate.content.cloneNode(true));
+
+        const styleMainLink = document.createElement('link');
+		styleMainLink.rel = 'stylesheet';
+		styleMainLink.href = './css/styles.css';
+		shadow.appendChild(styleMainLink)
+
+        const styleOtherLink = document.createElement('link');
+		styleOtherLink.rel = 'stylesheet';
+		styleOtherLink.href = './css/ostatni.css';
+		shadow.appendChild(styleOtherLink)
 	}
 
 	connectedCallback() {
 
-		const shadowRoot = this.attachShadow({mode: 'open'});
-		shadowRoot.appendChild(navbarTemplate.content.cloneNode(true));
-
-        const styleMainLink = document.createElement('link');
-		styleMainLink.rel = 'stylesheet';
-		styleMainLink.href = '../css/styles.css';
-		shadowRoot.appendChild(styleMainLink)
-
-        const styleOtherLink = document.createElement('link');
-		styleOtherLink.rel = 'stylesheet';
-		styleOtherLink.href = '../css/ostatni.css';
-		shadowRoot.appendChild(styleOtherLink)
+		
 
 	}
 }
