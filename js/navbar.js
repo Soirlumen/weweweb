@@ -36,6 +36,10 @@ navbarTemplate.innerHTML = `
                     <li><a href="rozvrh.html">Rozvrh</a></li>
                     <span class="small_separator"></span>
                     <li><a href="temata.html">Nabídka témat</a></li>
+                    <span class="small_separator"></span>
+                    <li><a href="vedeni_studenti.html">Vedení studenti</a></li>
+                    
+                    
                 </ul>
             </li>
             <li>

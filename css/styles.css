@@ -1,17 +1,18 @@
      :root {
         --bg: #f9fbff;
         --body: white;
-        --nav: #d0d9e8;
+        --nav: linear-gradient(#dfe8f8,#d0d9e8);
+        --nav2:#d0d9e8;
         --subnav:#e7f0ff;
         --idk: #738290;
-        --menu: #A1B5D8;
-        --navbutton: #415658;
+        --menu: linear-gradient(#bacef1, #A1B5D8);
+        --navbutton: #e0ac1c;
         --kontrast1:white;
         --kontrast2:black;
     } 
     body{
 
-        background:   linear-gradient(transparent 80px, var(--nav)  350px) no-repeat left top,url("../img/pozadi2.jpg"),var(--nav);
+        background:   linear-gradient(transparent 80px, var(--nav2)  350px) no-repeat left top,url("../img/pozadi2.jpg"),var(--nav2);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -35,7 +36,7 @@
     .menu {
         display: flex;
         justify-content: space-between;
-        background-color: var(--menu);
+        background: var(--menu);
         font-size: 18px;
         z-index: 999;
         border-top-left-radius: 20px;
@@ -46,7 +47,7 @@
         border-top-right-radius: 20px;
         margin: 0;
         padding: 0;
-        background-color: var(--nav);
+        background: var(--nav);
         display: flex;
         list-style: none;
         height: 100%;
@@ -67,7 +68,7 @@
         border-top-right-radius: 20px;
     }
     .navbar>ul li a:hover {
-        background-color: var(--kontrast1);
+        background: var(--kontrast1);
     }
     
     .navbar>ul li ul {
@@ -76,8 +77,9 @@
         list-style: none;
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        right: 0;
+        min-width: 100%;
+        max-width: 200%;
         z-index: 999;
         display: none;
         height: auto;
@@ -85,7 +87,6 @@
         align-items: center;
         justify-items: center;
         box-shadow: 1px 2px 4px var(--idk);
-        border-bottom-right-radius: 20px;
     }
     
     .navbar> ul li ul li {
@@ -121,7 +122,7 @@
     }
     
     .logo:hover {
-        background-color: var(--kontrast1);
+        background: var(--kontrast1);
         
     }
     
@@ -140,7 +141,7 @@
     }
     
     .footer {
-        background-color: var(--menu);
+        background: var(--menu);
         padding: 1vh;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -209,7 +210,7 @@
            display: none;
         }
         #menu-bar:hover{
- background-color: var(--kontrast1);
+ background: var(--kontrast1);
         }
         
     }

@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--bg);
+    background: var(--bg);
     overflow: auto;
     text-align: justify;
     font-size: 1.1em;
@@ -33,7 +33,7 @@ td {
 
 
 tr:nth-child(even) {
-    background-color: var(--subnav);
+    background: var(--subnav);
 }
 
 td {
@@ -42,14 +42,14 @@ td {
 }
 
 td:hover {
-    background-color: #f3f7ff;
+    background: #f3f7ff;
 }
 .year{
     white-space: nowrap;
-    background-color: var(--kontrast1);
+    background: var(--kontrast1);
 }
 .year:hover {
-    background-color: var(--kontrast1);
+    background: var(--kontrast1);
 }
 
 td a {
@@ -63,13 +63,13 @@ button {
     cursor: pointer;
     padding: 10px 15px;
     font-size: 16px;
-    color: var(--kontrast2);
+    color: var(--kontrast1);
     transition-duration: 0.4s;
-    background-color: var(--nav);
+    background: var(--navbutton);
 }
 
 button:hover {
-    background-color: var(--kontrast1);
+    background: var(--kontrast1);
     color: var(--navbutton);
 
 }
@@ -98,7 +98,7 @@ button:hover {
 
 .separator::after {
     content: '♡ ♡ ♡';
-    background-color: var(--bg);
+    background: var(--bg);
     padding: 0 5px;
     position: relative;
     top: -13px;
@@ -112,7 +112,7 @@ button:hover {
 
 /*styly pro ul li buňky*/
 .item {
-    background-color: var(--subnav);
+    background: var(--subnav);
     width: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -122,7 +122,7 @@ button:hover {
 }
 
 .item>h3 {
-    background-color: var(--idk);
+    background: var(--idk);
     padding: 1% 2%;
     color: var(--subnav);
     font-size: 1.3rem;
@@ -156,7 +156,7 @@ button:hover {
 /*styly pro navigacni strukturu, ktera ale neni aplikovana protoze neni na strance slozita struktura*/
 .tree {
     width: 100%;
-    background-color: var(--subnav);
+    background: var(--subnav);
     padding: 3px 0;
     margin: 0;
 }
@@ -177,7 +177,7 @@ button:hover {
     width: 100%;
     box-sizing: border-box;
     gap: 10px;
-    background-color: var(--subnav);
+    background: var(--subnav);
     padding: 10px;
 }
 .medailonek>div{
@@ -196,7 +196,7 @@ button:hover {
     height: 100%;
     border-radius: 20px;
     box-sizing:border-box;
-    background-color: var(--bg);
+    background: var(--bg);
     display: flex;
     flex-direction: column;
 }
@@ -206,7 +206,7 @@ button:hover {
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     box-sizing:border-box;
-    background-color: var(--menu);
+    background: var(--menu);
     margin: 0;
     padding: 5px 15px;
     font-size: 1.3rem;
