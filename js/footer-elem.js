@@ -3,7 +3,7 @@
 const footerElemTemplate = document.createElement('template');
 
 footerElemTemplate.innerHTML = `
-<div class="footer navtext" style="box-shadow: 0px 2px 4px var(--idk)"><span>2025 AIPV niggas |
+<div class="footer navtext" style="box-shadow: 0px 2px 4px var(--idk)"><span>2025 AIPV crew |
 	<span class="quoteDisplayBox">Loading...</span></span>
 </div>
 `;
@@ -50,6 +50,8 @@ class FooterElem extends HTMLElement {
 			"„Život musí být bohatý a plný lásky - jinak není dobrý, není dobrý vůbec, pro nikoho.“ — Jack Kerouac",
 		];
 
+		console.log("neco")
+
 		const randomIndex = Math.floor(Math.random() * quotes.length);
 		this.shadowRoot.querySelector('.quoteDisplayBox').innerText = quotes[randomIndex];
 	}
@@ -59,7 +61,7 @@ class FooterElem extends HTMLElement {
 		this.quoteOnChange();
 
 		// 120000 = 2 min
-		setInterval(this.quoteOnChange, 120000);
+		setInterval(this.quoteOnChange, 5000);
 	}
 
 }

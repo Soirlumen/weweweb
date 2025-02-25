@@ -157,7 +157,7 @@ button:hover {
 .tree {
     width: 100%;
     background: var(--subnav);
-    padding: 3px 0;
+    padding: 0.5%;
     margin: 0;
 }
 
