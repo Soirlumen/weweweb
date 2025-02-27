@@ -160,6 +160,10 @@ button:hover {
     padding: 0.5%;
     margin: 0;
 }
+form{
+    
+}
+
 
 .tree>a::after {
     content: ">>";
